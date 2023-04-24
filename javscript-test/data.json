@@ -1,0 +1,98 @@
+[
+  {
+    "Name": "Anakin",
+    "Gender": "male",
+    "Homeworld": "Tatooine",
+    "Born": "41.9BBY",
+    "Jedi": "yes",
+    "Skill": "10"
+  },
+  {
+    "Name": "Amidala",
+    "Gender": "female",
+    "Homeworld": "Naboo",
+    "Born": "46BBY",
+    "Jedi": "no",
+    "Skill": "1"
+  },
+  {
+    "Name": "R2-D2",
+    "Gender": "unknown",
+    "Homeworld": "Naboo",
+    "Born": "33BBY",
+    "Jedi": "no",
+    "Skill": "0"
+  },
+  {
+    "Name": "Luke",
+    "Gender": "male",
+    "Homeworld": "Tatooine",
+    "Born": "19BBY",
+    "Jedi": "yes",
+    "Skill": "9"
+  },
+  {
+    "Name": "Leia",
+    "Gender": "female",
+    "Homeworld": "Alderaan",
+    "Born": "19BBY",
+    "Jedi": "no",
+    "Skill": "3"
+  },
+  {
+    "Name": "Obi-Wan",
+    "Gender": "male",
+    "Homeworld": "Stewjon",
+    "Born": "57BBY",
+    "Jedi": "yes",
+    "Skill": "9"
+  },
+  {
+    "Name": "Han Solo",
+    "Gender": "male",
+    "Homeworld": "Corellia",
+    "Born": "29BBY",
+    "Jedi": "no",
+    "Skill": "7"
+  },
+  {
+    "Name": "Palpatine",
+    "Gender": "male",
+    "Homeworld": "Naboo",
+    "Born": "82BBY",
+    "Jedi": "no",
+    "Skill": "8"
+  },
+  {
+    "Name": "Palpatine",
+    "Gender": "male",
+    "Homeworld": "Naboo",
+    "Born": "82BBY",
+    "Jedi": "no",
+    "Skill": "8"
+  },
+  {
+    "Name": "Palpatine",
+    "Gender": "male",
+    "Homeworld": "Naboo",
+    "Born": "82BBY",
+    "Jedi": "no",
+    "Skill": "8"
+  },
+  {
+    "Name": "Palpatine",
+    "Gender": "male",
+    "Homeworld": "Naboo",
+    "Born": "82BBY",
+    "Jedi": "no",
+    "Skill": "8"
+  },
+  {
+    "Name": "Palpatine",
+    "Gender": "male",
+    "Homeworld": "Naboo",
+    "Born": "82BBY",
+    "Jedi": "no",
+    "Skill": "8"
+  }
+]

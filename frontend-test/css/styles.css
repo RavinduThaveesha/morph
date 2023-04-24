@@ -1,0 +1,75 @@
+.bg-image {
+    background-image: url('../images/mask.jpg'); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.title-with-image {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.title-image {
+    max-height: 30px;
+}
+
+.mask {
+    background-color: rgba(4, 108, 177, 0.6)
+}
+
+.title-light {
+    font-size: 35px;
+    margin-bottom: 0px;
+    font-weight: 400;
+}
+
+.title-bold {
+    font-size: 60px;
+    letter-spacing: 3px;
+    font-weight: 500;
+}
+
+.thumbnail .caption {
+    min-height: 320px;
+}
+
+.thumbnail .caption h6 {
+    font-size: 0.8rem;
+}
+
+.thumbnail .caption h4 {
+    font-size: 1.3rem;
+}
+
+.btn-readmore {
+    background-color: #fff;
+    color: #007bff;
+    border: 0;
+    border-radius: 100px;
+}
+
+.accordion {
+    --bs-accordion-active-bg: #005686;
+    --bs-accordion-active-color: #fff;
+}
+    
+.accordion-button::after {
+    display: none !important;
+}
+
+footer div {
+    background-color: #005686
+}
+
+.thumbnail-body-blue {
+    background-color: #009eff;
+}
+
+.thumbnail-body-dark-blue {
+    background-color: #005686;
+}
+
+.thumbnail-body-light-green {
+    background-color: #d9f5f2;
+}
