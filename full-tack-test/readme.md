@@ -33,7 +33,7 @@ If you prefer to run without Docker please follow Laravel documentation.
 - Framework: Laravel 10
 - Design Patterns: MVC/Service-Repository
 
-### Need see it without runing ? 
+### Need to see it without running ? 
 
 - Please refer screenshots.
 
