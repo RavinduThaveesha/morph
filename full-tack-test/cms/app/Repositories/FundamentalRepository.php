@@ -34,14 +34,13 @@ class FundamentalRepository extends BaseRepository implements FundamentalReposit
      * @param Array $data
      * @return App\Fundamental
      */
-    public function update(array $fundamental, $id)
-    {
-        $profile = $this->model->find($id);
+    public function update(array $fundamental, $id) {
+        $model = $this->model->find($id);
 
-        $profile->name = $fundamental['name'];
-        $profile->content = $fundamental['content'];
+        $model->name = $fundamental['name'];
+        $model->content = $fundamental['content'];
 
-        $profile->save();
+        $model->save();
         
         return $this->model;
     }

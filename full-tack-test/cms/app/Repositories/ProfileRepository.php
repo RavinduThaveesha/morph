@@ -14,8 +14,7 @@ class ProfileRepository extends BaseRepository implements ProfileRepositoryInter
      * @param User $model
      * @return void
      */
-    public function __construct(User $model)
-    {
+    public function __construct(User $model) {
         parent::__construct($model);
     }
 
@@ -25,8 +24,7 @@ class ProfileRepository extends BaseRepository implements ProfileRepositoryInter
      * @param Array $data
      * @return App\User
      */
-    public function update(array $user, $id)
-    {
+    public function update(array $user, $id) {
         $profile = $this->model->find($id);
 
         $profile->name = $user['name'];

@@ -41,8 +41,7 @@ class FundamentalController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return Redirect
      */
-    public function store(Request $request)
-    {
+    public function store(Request $request) {
         // validate data
         $validated = $request->validate([
             'name' => 'required|max:255',
@@ -60,8 +59,7 @@ class FundamentalController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
-    {
+    public function edit($id) {
         $fundamental = $this->fundamentalService->find($id);
         return view('fundamental.edit', compact('fundamental'));
     }
@@ -73,8 +71,7 @@ class FundamentalController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
-    {
+    public function update(Request $request, $id) {
         // validate data
         $validated = $request->validate([
             'name' => 'required|max:255',

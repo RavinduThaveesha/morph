@@ -34,16 +34,15 @@ class DriveRepository extends BaseRepository implements DriveRepositoryInterface
      * @param Array $data
      * @return App\Drive
      */
-    public function update(array $drive, $id)
-    {
-        $drive = $this->model->find($id);
+    public function update(array $drive, $id) {
+        $model = $this->model->find($id);
 
-        $drive->title = $drive['title'];
-        $drive->sub_title = $drive['sub_title'];
-        $drive->time = $drive['time'];
-        $drive->description = $drive['description'];
+        $model->title = $drive['title'];
+        $model->sub_title = $drive['sub_title'];
+        $model->time = $drive['time'];
+        $model->description = $drive['description'];
 
-        $drive->save();
+        $model->save();
         
         return $this->model;
     }

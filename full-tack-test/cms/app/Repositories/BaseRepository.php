@@ -29,8 +29,7 @@ class BaseRepository implements EloquentRepositoryInterface
      * @param Model $model
      * @return void
      */
-    public function __construct(Model $model)
-    {
+    public function __construct(Model $model) {
         $this->model = $model;
     }
 
@@ -40,8 +39,7 @@ class BaseRepository implements EloquentRepositoryInterface
      * @param $id
      * @return Model
      */
-    public function first()
-    {
+    public function first() {
         return $this->model->first();
     }
 
@@ -51,8 +49,7 @@ class BaseRepository implements EloquentRepositoryInterface
      * @param $id
      * @return Model
      */
-    public function find($id)
-    {
+    public function find($id) {
         return $this->model->find($id);
     }
 
@@ -61,8 +58,7 @@ class BaseRepository implements EloquentRepositoryInterface
      *
      * @return Model
      */
-    public function create(array $data)
-    {
+    public function create(array $data) {
         return $this->model->create($data);
     }
 
@@ -72,8 +68,7 @@ class BaseRepository implements EloquentRepositoryInterface
      * @param Int $id
      * @return Model
      */
-    public function destroy($id)
-    {
+    public function destroy($id) {
         return $this->model->destroy($id);
     }
 }

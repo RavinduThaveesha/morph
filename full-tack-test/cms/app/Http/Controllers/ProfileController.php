@@ -13,8 +13,7 @@ class ProfileController extends Controller
      * @param ProfileService $profileService
      * @return void
      */
-    public function __construct(ProfileService $profileService)
-    {
+    public function __construct(ProfileService $profileService) {
         $this->profileService = $profileService;
     }
 
@@ -24,8 +23,7 @@ class ProfileController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
-    {
+    public function show($id) {
         return $this->profileService->find($id);
     }
 
@@ -35,8 +33,7 @@ class ProfileController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
-    {
+    public function edit($id) {
         $profile = $this->profileService->find($id);
         return view('profile.edit', compact('profile'));
     }
@@ -48,8 +45,7 @@ class ProfileController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
-    {
+    public function update(Request $request, $id) {
         // validate data
         $validated = $request->validate([
             'name' => 'required|max:255',

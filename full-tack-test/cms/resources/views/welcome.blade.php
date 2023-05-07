@@ -37,48 +37,48 @@
                             Project Planner Fundamentals
                         </button>
                     </h2>
-                </div>
-                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordion">
-                    <div class="accordion-body">
-                        @if (($data && $data['fundamentals']))
-                            <ul class="nav nav-tabs nav-fill" id="tab" role="tablist">
-                                @foreach ($data['fundamentals'] as $key => $fundamental)
-                                    <li class="nav-item" role="presentation">
-                                        <button class="nav-link {{ $key == 1 ? 'active' : ''}}" id="home-tab" data-bs-toggle="tab" data-bs-target="#tb{{$fundamental['id']}}" type="button" role="tab" aria-controls="tb{{$fundamental['id']}}" aria-selected="{{ $key == 1 ? 'true' : 'false'}}">{{$fundamental['name']}}</button>
-                                    </li>
-                                @endforeach
-                            </ul>
-                            <div class="tab-content" id="tabContent">
-                                @foreach ($data['fundamentals'] as $key => $fundamental)
-                                    <div class="tab-pane fade p-3 {{ $key == 1 ? 'show active' : ''}}" id="tb{{$fundamental['id']}}" role="tabpanel" aria-labelledby="tb{{$fundamental['id']}}-tab">
-                                        {!! $fundamental['content'] !!}
-                                    </div>
-                                @endforeach
-                            </div>
-                        @else
-                            <p class="text-right">No Content</p>
-                        @endif
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordion">
+                        <div class="accordion-body">
+                            @if (($data && $data['fundamentals']))
+                                <ul class="nav nav-tabs nav-fill" id="tab" role="tablist">
+                                    @foreach ($data['fundamentals'] as $key => $fundamental)
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link {{ $key == 1 ? 'active' : ''}}" id="home-tab" data-bs-toggle="tab" data-bs-target="#tb{{$fundamental['id']}}" type="button" role="tab" aria-controls="tb{{$fundamental['id']}}" aria-selected="{{ $key == 1 ? 'true' : 'false'}}">{{$fundamental['name']}}</button>
+                                        </li>
+                                    @endforeach
+                                </ul>
+                                <div class="tab-content" id="tabContent">
+                                    @foreach ($data['fundamentals'] as $key => $fundamental)
+                                        <div class="tab-pane fade p-3 {{ $key == 1 ? 'show active' : ''}}" id="tb{{$fundamental['id']}}" role="tabpanel" aria-labelledby="tb{{$fundamental['id']}}-tab">
+                                            {!! $fundamental['content'] !!}
+                                        </div>
+                                    @endforeach
+                                </div>
+                            @else
+                                <p class="text-right">No Content</p>
+                            @endif
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingTwo">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        Working with Projects and Tasks
-                    </button>
-                </h2>
-                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">...</div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Working with Projects and Tasks
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">...</div>
+                    </div>
                 </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingThree">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        Saving and Rusing Content
-                    </button>
-                </h2>
-                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">...</div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Saving and Rusing Content
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">...</div>
+                    </div>
                 </div>
             </div>
         </div>
