@@ -30,7 +30,7 @@ If you prefer to run without Docker please follow Laravel documentation.
 
 ### Tech
 
-- Framework: Laravel 10
+- Framework: Laravel 8
 - Design Patterns: MVC/Service-Repository
 
 ### Need to see it without running ? 
